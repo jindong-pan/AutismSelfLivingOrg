@@ -1,0 +1,21 @@
+# Todo:
+- [ ] Define mission and vision
+- [ ] Identify target audience
+- [ ] Research existing nonprofits
+- [ ] Recruit founding board members
+- [ ] Create a business plan
+- [ ] Choose a name and check availability
+- [ ] File Articles of Incorporation
+- [ ] Apply for IRS 501(c)(3) status
+- [ ] Obtain EIN from IRS
+- [ ] Register with state charity office
+- [ ] Draft bylaws and conflict of interest policy
+- [ ] Open nonprofit bank account
+- [ ] Set up accounting system
+- [ ] Develop program offerings
+- [ ] Launch website and social media
+- [ ] Apply for grants and start fundraising
+- [ ] Recruit volunteers
+- [ ] Build partnerships
+- [ ] Monitor and evaluate programs
+- [ ] File annual IRS Form 990

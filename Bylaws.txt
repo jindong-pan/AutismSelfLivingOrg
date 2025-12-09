@@ -1,0 +1,9 @@
+1. Name of Organization: [Your Nonprofit Name]
+2. Purpose: To provide therapy, education, and family support for children with autism.
+3. Board of Directors: 
+   - Number: 5 members
+   - Terms: 3 years, staggered
+   - Meetings: Quarterly
+4. Officers: President, Treasurer, Secretary
+5. Voting: Majority vote required for decisions
+6. Conflict of Interest: Board members must disclose any financial interests.
