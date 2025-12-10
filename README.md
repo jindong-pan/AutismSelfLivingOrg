@@ -18,7 +18,7 @@ Our balanced approach emphasizes:
 - **让他们生活得更幸福** (Supporting their happiness and well-being)
 - **基于深度理解的温和行为支持** (Gentle, understanding-based behavioral support when needed)
 
-We celebrate neurodiversity while ensuring every individual can thrive safely and independently, while **relieving parents from the crushing weight of hopelessness and isolation**.
+We embrace neurodiversity while ensuring every individual can thrive safely and independently, while **relieving parents from the crushing weight of hopelessness and isolation**.
 
 ## 我们的使命：
 我们是一个主动的非营利组织，在家庭知道自己需要帮助之前，就主动寻找并支持自闭症儿童的家庭。与传统的被动等待家庭寻求帮助的组织不同，我们主动识别、接触并为最需要的儿童和家庭提供全面支持。
