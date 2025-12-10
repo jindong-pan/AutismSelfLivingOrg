@@ -1,7 +1,7 @@
 # 💰 Independent Spectrum 筹款计划 - Fundraising Plan
 
-**组织名称**: Independent Spectrum (独立谱系)
-**口号**: "Relieving Burdens, Enabling Independence" (减轻负担，实现独立)
+**组织名称**: Peaceful Independence (平静独立)
+**口号**: "Relieving Burdens, Finding Peaceful Independence" (减轻负担，实现平静独立)
 
 ## 🎯 执行摘要
 

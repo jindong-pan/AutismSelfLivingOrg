@@ -1,4 +1,4 @@
-# Independent Spectrum - 我们的理念
+# Peaceful Independence - 我们的理念
 
 **口号**: "Relieving Burdens, Enabling Independence" (减轻负担，实现独立)
 

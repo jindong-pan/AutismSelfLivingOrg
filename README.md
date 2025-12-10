@@ -1,9 +1,9 @@
-# Independent Spectrum - 独立谱系
+# Peaceful Independence - 平静独立
 ## Our mission:
 **Independent Spectrum** is a proactive non-profit organization that seeks out and supports families of children with autism before they even know they need help. Unlike traditional organizations that wait for families to find them, we take the initiative to identify, reach out to, and provide comprehensive support to children and families who need it most.
 
-**Tagline: "Relieving Burdens, Enabling Independence"**
-*(减轻负担，实现独立)*
+**Tagline: "Relieving Burdens, Finding Peaceful Independence"**
+*(减轻负担，实现平静独立)*
 
 We understand the heavy burden parents carry - the hopelessness, exhaustion, and overwhelming responsibility. Our mission is to **lighten that load** while empowering autistic individuals to live independently and happily.
 
