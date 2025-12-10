@@ -159,19 +159,38 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // 页面加载完成后的初始化
+    // 语言切换功能
+function changeLanguage(lang) {
+    if (lang === 'zh') {
+        window.location.href = 'index-zh.html';
+    } else if (lang === 'es') {
+        // 将来添加西班牙语版本
+        alert('Spanish version coming soon!');
+    } else {
+        window.location.href = 'index.html';
+    }
+}
+
+// 页面加载完成后的初始化
     window.addEventListener('load', function() {
         // 添加加载完成类
         document.body.classList.add('loaded');
 
         // 初始化页面标题
-        document.title = 'Independent Spectrum - 独立谱系 | Relieving Burdens, Enabling Independence';
+        document.title = 'Independent Spectrum | Relieving Burdens, Enabling Independence';
 
-        // 设置favicon (如果需要)
-        // const favicon = document.createElement('link');
-        // favicon.rel = 'icon';
-        // favicon.href = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🌊</text></svg>';
-        // document.head.appendChild(favicon);
+        // 设置语言选择器默认值
+        const currentPage = window.location.pathname;
+        const languageSelect = document.getElementById('language-select');
+        if (languageSelect) {
+            if (currentPage.includes('-zh.html')) {
+                languageSelect.value = 'zh';
+            } else if (currentPage.includes('-es.html')) {
+                languageSelect.value = 'es';
+            } else {
+                languageSelect.value = 'en';
+            }
+        }
     });
 
     // 性能监控 (可选)
