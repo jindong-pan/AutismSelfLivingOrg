@@ -159,17 +159,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // 语言切换功能
-function changeLanguage(lang) {
-    if (lang === 'zh') {
-        window.location.href = 'index-zh.html';
-    } else if (lang === 'es') {
-        // 将来添加西班牙语版本
-        alert('Spanish version coming soon!');
-    } else {
-        window.location.href = 'index.html';
-    }
-}
+    // 语言链接现在使用简单的HTML链接，不需要JavaScript
 
 // 页面加载完成后的初始化
     window.addEventListener('load', function() {
@@ -178,19 +168,6 @@ function changeLanguage(lang) {
 
         // 初始化页面标题
         document.title = 'Independent Spectrum | Relieving Burdens, Enabling Independence';
-
-        // 设置语言选择器默认值
-        const currentPage = window.location.pathname;
-        const languageSelect = document.getElementById('language-select');
-        if (languageSelect) {
-            if (currentPage.includes('-zh.html')) {
-                languageSelect.value = 'zh';
-            } else if (currentPage.includes('-es.html')) {
-                languageSelect.value = 'es';
-            } else {
-                languageSelect.value = 'en';
-            }
-        }
     });
 
     // 性能监控 (可选)
