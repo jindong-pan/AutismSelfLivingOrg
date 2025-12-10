@@ -7,14 +7,18 @@
 
 We understand the heavy burden parents carry - the hopelessness, exhaustion, and overwhelming responsibility. Our mission is to **lighten that load** while empowering autistic individuals to live independently and happily.
 
-## Our Philosophy: Acceptance, Independence & Happiness
-Unlike many autism organizations that focus on "normalizing" autistic children, we believe in:
+## Our Philosophy: Understanding, Support & Independent Living
+
+We believe every autistic individual deserves understanding, acceptance, and the support they need to live independently and happily. While we don't focus on "normalizing" autistic children to fit neurotypical standards, we recognize that some behaviors may need gentle, understanding-based support for safety and well-being.
+
+Our balanced approach emphasizes:
 - **增加支持让他们能够独立生活** (Providing support for independent living)
 - **了解他们** (Understanding and accepting them as they are)
 - **让他们适应生活** (Helping them adapt to life on their terms)
 - **让他们生活得更幸福** (Supporting their happiness and well-being)
+- **基于深度理解的温和行为支持** (Gentle, understanding-based behavioral support when needed)
 
-We celebrate neurodiversity and focus on building a world where autistic individuals can thrive independently and happily, while **relieving parents from the crushing weight of hopelessness and isolation**.
+We celebrate neurodiversity while ensuring every individual can thrive safely and independently, while **relieving parents from the crushing weight of hopelessness and isolation**.
 
 ## 我们的使命：
 我们是一个主动的非营利组织，在家庭知道自己需要帮助之前，就主动寻找并支持自闭症儿童的家庭。与传统的被动等待家庭寻求帮助的组织不同，我们主动识别、接触并为最需要的儿童和家庭提供全面支持。
