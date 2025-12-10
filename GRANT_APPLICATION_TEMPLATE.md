@@ -12,7 +12,7 @@
 
 ### 1. 组织基本信息
 
-**组织名称**: AutismSelfLivingOrg (自闭症自主生活组织)
+**组织名称**: Independent Spectrum (独立谱系)
 
 **成立日期**: [成立日期]
 
@@ -21,7 +21,9 @@
 **组织类型**: 501(c)(3) 非营利组织
 
 **使命声明**:
-我们是一个主动的非营利组织，通过AI赋能工具，主动发现并支持自闭症儿童家庭。我们不等待家庭求助，而是使用创新技术主动提供干预和支持。
+Independent Spectrum 是一个主动的非营利组织，通过AI赋能工具，主动发现并支持自闭症儿童家庭。我们不等待家庭求助，而是使用创新技术主动提供干预和支持，帮助父母摆脱绝望和沉重负担的感觉。
+
+**口号**: "Relieving Burdens, Enabling Independence" (减轻负担，实现独立)
 
 **核心理念**:
 与许多试图"正常化"自闭症儿童的组织不同，我们相信：
@@ -29,8 +31,9 @@
 - **了解他们** (Understanding and accepting them as they are)
 - **让他们适应生活** (Helping them adapt to life on their terms)
 - **让他们生活得更幸福** (Supporting their happiness and well-being)
+- **减轻父母的绝望与沉重负担** (Relieving parents from hopelessness and heavy burdens)
 
-我们庆祝神经多样性，致力于创建一个自闭症个体能够独立幸福生活的世界。
+我们庆祝神经多样性，致力于创建一个自闭症个体能够独立幸福生活的世界，同时为父母提供所需的理解、支持和希望。
 
 **组织地址**:
 [您的组织地址]

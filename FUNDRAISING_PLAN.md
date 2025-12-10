@@ -1,4 +1,7 @@
-# 💰 AutismSelfLivingOrg 筹款计划 - Fundraising Plan
+# 💰 Independent Spectrum 筹款计划 - Fundraising Plan
+
+**组织名称**: Independent Spectrum (独立谱系)
+**口号**: "Relieving Burdens, Enabling Independence" (减轻负担，实现独立)
 
 ## 🎯 执行摘要
 
