@@ -12,7 +12,7 @@
 
 ### 1. 组织基本信息
 
-**组织名称**: Peaceful Independence (平静独立)
+**组织名称**: Peaceful Independence (平安独立)
 
 **成立日期**: [成立日期]
 
