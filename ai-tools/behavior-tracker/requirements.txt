@@ -20,3 +20,4 @@ tensorflow>=2.8.0  # 可选，用于更高级的AI分析
 flask>=2.0.0  # 用于创建Web界面
 fastapi>=0.70.0  # 用于API开发
 
+

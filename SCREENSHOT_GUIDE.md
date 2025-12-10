@@ -310,3 +310,4 @@ sudo apt reinstall flameshot
 **文档版本**: v1.0
 **最后更新**: 2025-01-09
 **适用系统**: Linux Mint 22.x
+
