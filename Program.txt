@@ -1,14 +1,60 @@
-Program Name: [e.g., "Autism Social Skills Group"]
+# 主动支持项目模板 - Proactive Support Program Template
 
-Target Audience: Children aged 6–12 with autism
+## 主动外展项目 - Proactive Outreach Program
+**项目名称**: 早期发现与家庭支持 (Early Discovery & Family Support)
 
-Frequency: Weekly, 90-minute sessions
+**目标群体**: 2-8岁儿童及家庭（主动识别潜在自闭症特征）
 
-Facilitated by: Certified therapists and trained volunteers
+**主动发现方式**:
+- 学校筛查合作
+- 社区医疗中心合作
+- 家长教师会议参与
 
-Activities: Role-playing, games, group discussions
+**干预频率**: 每周家庭访问 + 按需支持
 
-Goals: Improve communication, reduce anxiety, build friendships
+**服务提供者**: 主动外展专员、认证治疗师、家庭支持协调员
 
-Outcomes Measured: Pre- and post-program assessments, parent feedback
+**主动干预活动**:
+- 家庭上门评估
+- 早期行为干预
+- 家长培训和支持
+- 社区资源连接
+
+**核心目标**:
+- 在问题恶化前主动干预
+- 减少家庭寻找帮助的时间
+- 提供全面的家庭为中心支持
+
+**成功衡量指标**:
+- 主动识别的家庭数量
+- 早期干预的及时率
+- 家庭满意度和生活质量改善
+- 儿童发展里程碑达成率
+
+---
+
+## 社区整合项目 - Community Integration Program
+**项目名称**: 包容性社区参与 (Inclusive Community Participation)
+
+**目标群体**: 已识别自闭症儿童及其家庭
+
+**主动支持方式**:
+- 主动邀请参加社区活动
+- 提供个性化过渡支持
+- 培训社区成员理解自闭症
+
+**参与频率**: 每周社区活动 + 家庭跟进
+
+**服务提供者**: 社区整合协调员、志愿者支持团队
+
+**主动活动**:
+- 公园游戏小组
+- 图书馆故事时间
+- 体育活动适应
+- 艺术工作坊
+
+**核心目标**:
+- 打破社会孤立
+- 建立社区支持网络
+- 促进包容性环境
 

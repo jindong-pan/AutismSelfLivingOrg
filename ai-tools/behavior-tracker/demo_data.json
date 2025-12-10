@@ -1,0 +1,49 @@
+{
+  "entries": [
+    {
+      "timestamp": "2025-12-09T19:12:31.247967",
+      "behavior": "在超市排队时发脾气",
+      "category": "challenging",
+      "intensity": 4,
+      "trigger": "等待时间长",
+      "notes": "不喜欢排队，提前准备了玩具但还是发生了",
+      "duration": 15
+    },
+    {
+      "timestamp": "2025-12-09T19:12:31.249005",
+      "behavior": "专注玩拼图游戏",
+      "category": "positive",
+      "intensity": 2,
+      "trigger": "感兴趣的活动",
+      "notes": "连续玩了30分钟，进展很好",
+      "duration": 30
+    },
+    {
+      "timestamp": "2025-12-09T19:12:31.250564",
+      "behavior": "早晨起床困难",
+      "category": "challenging",
+      "intensity": 3,
+      "trigger": "日常变化",
+      "notes": "需要更多时间适应早晨 routine",
+      "duration": 20
+    },
+    {
+      "timestamp": "2025-12-09T19:12:31.252994",
+      "behavior": "与兄弟姐妹分享玩具",
+      "category": "developmental",
+      "intensity": 2,
+      "trigger": "家庭活动",
+      "notes": "这是第一次主动分享，很好的社交进步",
+      "duration": 10
+    },
+    {
+      "timestamp": "2025-12-09T19:12:31.255849",
+      "behavior": "在公园玩耍开心",
+      "category": "positive",
+      "intensity": 1,
+      "trigger": "户外活动",
+      "notes": "喜欢秋千和滑梯，社交互动增加",
+      "duration": 45
+    }
+  ]
+}
