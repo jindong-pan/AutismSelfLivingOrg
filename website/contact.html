@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - Independent Spectrum</title>
+    <meta name="description" content="联系Independent Spectrum，了解我们的AI赋能自闭症支持服务，加入我们的使命，或获取更多信息。">
+    <link rel="stylesheet" href="static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">🌊</div>
+                <a href="index.html"><span>Independent Spectrum</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">首页</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="services.html">服务</a></li>
+                <li><a href="donate.html">支持我们</a></li>
+                <li><a href="contact.html" class="active">联系我们</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>联系我们</h1>
+                <p class="tagline">我们在这里倾听和支持</p>
+                <p class="hero-description">
+                    无论您是需要帮助的自闭症家庭、合作伙伴还是支持者，我们都欢迎您的联系。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="contact-options">
+        <div class="container">
+            <h2>多种联系方式</h2>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>电子邮件</h3>
+                    <p>发送详细问题或合作意向</p>
+                    <div class="contact-info">
+                        <strong>info@independentspectrum.org</strong>
+                    </div>
+                    <p class="response-time">回复时间: 24-48小时</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <h3>电话支持</h3>
+                    <p>需要立即帮助或紧急支持</p>
+                    <div class="contact-info">
+                        <strong>+1 (555) 123-4567</strong>
+                    </div>
+                    <p class="response-time">工作时间: 周一至周五 9AM-6PM</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">💬</div>
+                    <h3>在线聊天</h3>
+                    <p>快速咨询和初步支持</p>
+                    <div class="contact-info">
+                        <strong>网站聊天机器人</strong>
+                    </div>
+                    <p class="response-time">24/7可用</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📝</div>
+                    <h3>联系表单</h3>
+                    <p>详细描述您的需求和情况</p>
+                    <div class="contact-info">
+                        <strong>下方表单</strong>
+                    </div>
+                    <p class="response-time">回复时间: 24-48小时</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-form-container">
+                <div class="form-intro">
+                    <h2>发送消息</h2>
+                    <p>请填写下面的表单，我们会尽快回复您。所有信息都将被保密。</p>
+
+                    <div class="contact-details">
+                        <h3>我们如何帮助您？</h3>
+                        <ul>
+                            <li>🧑‍👧 自闭症儿童家长支持</li>
+                            <li>🤝 合作伙伴关系建立</li>
+                            <li>💰 捐赠和志愿服务</li>
+                            <li>📊 研究合作机会</li>
+                            <li>📰 媒体和采访请求</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">姓名 *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">电子邮件 *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">电话号码</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">主题 *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">请选择主题</option>
+                            <option value="parent-support">家长支持</option>
+                            <option value="partnership">合作伙伴关系</option>
+                            <option value="donation">捐赠咨询</option>
+                            <option value="volunteer">志愿服务</option>
+                            <option value="research">研究合作</option>
+                            <option value="media">媒体咨询</option>
+                            <option value="other">其他</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">消息 *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="请详细描述您的需求或问题..."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter" checked>
+                            <span class="checkmark"></span>
+                            订阅我们的电子通讯，了解最新进展和服务
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">发送消息</button>
+
+                    <p class="privacy-note">
+                        我们重视您的隐私。您的信息将仅用于回复您的询问。
+                        <a href="#privacy">查看隐私政策</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>常见问题</h2>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>你们的AI工具现在可以使用吗？</h3>
+                    <p>我们的行为追踪器和情感支持机器人正在开发中。目前我们正在进行beta测试。加入我们的等候名单，我们会在工具准备就绪时通知您。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>你们的服务覆盖哪些地区？</h3>
+                    <p>我们从线上服务开始，计划扩展到主要城市。目前我们的AI工具可以在任何有互联网连接的地方使用。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>如何加入志愿服务？</h3>
+                    <p>我们欢迎各种技能的志愿者，包括技术专家、自闭症专业人士、沟通专家等。请填写联系表单说明您的兴趣和技能。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>你们接受企业赞助吗？</h3>
+                    <p>是的，我们欢迎企业合作伙伴。企业赞助可以包括资金支持、技术合作、志愿者项目等。联系我们讨论合作机会。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>如何报告网站问题？</h3>
+                    <p>我们重视用户反馈。如果您发现网站问题或有改进建议，请通过联系表单告诉我们。我们会尽快处理。</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>你们的数据如何保护？</h3>
+                    <p>我们严格遵守隐私保护法规。所有数据都经过加密处理，只用于提供服务。我们不会出售或分享个人信息给第三方。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Hours -->
+    <section class="office-hours">
+        <div class="container">
+            <h2>服务时间</h2>
+
+            <div class="hours-content">
+                <div class="hours-info">
+                    <h3>在线支持</h3>
+                    <ul>
+                        <li><strong>AI情感支持机器人:</strong> 24/7 可用</li>
+                        <li><strong>电子邮件支持:</strong> 周一至周五，9:00-18:00</li>
+                        <li><strong>电话支持:</strong> 周一至周五，9:00-18:00</li>
+                        <li><strong>紧急支持:</strong> 24/7 通过聊天机器人</li>
+                    </ul>
+
+                    <p class="timezone">所有时间为东部标准时间 (EST)</p>
+                </div>
+
+                <div class="support-notice">
+                    <h3>重要通知</h3>
+                    <p>如果您或您的孩子正处于危机中，请立即寻求专业帮助：</p>
+                    <ul>
+                        <li>拨打紧急服务热线</li>
+                        <li>联系当地心理健康危机中心</li>
+                        <li>寻求医疗专业人士的立即帮助</li>
+                    </ul>
+                    <p><strong>我们不是医疗服务提供者，但可以帮您找到合适的专业帮助。</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map/Location Section (Placeholder) -->
+    <section class="location">
+        <div class="container">
+            <h2>我们的服务范围</h2>
+            <div class="location-content">
+                <div class="location-text">
+                    <p>目前我们主要提供线上服务，计划扩展到以下地区：</p>
+                    <ul class="location-list">
+                        <li>📍 线上服务 - 全美覆盖</li>
+                        <li>🏙️ 主要城市试点项目 (规划中)</li>
+                        <li>🏫 学校合作伙伴项目 (正在招募)</li>
+                        <li>🏥 医疗合作伙伴项目 (正在洽谈)</li>
+                    </ul>
+
+                    <p>如果您所在的地区有特殊需求或合作伙伴机会，请联系我们讨论合作可能性。</p>
+                </div>
+
+                <div class="location-map">
+                    <!-- Placeholder for map -->
+                    <div class="map-placeholder">
+                        <div class="map-icon">🗺️</div>
+                        <p>服务范围地图即将推出</p>
+                        <p>目前提供全美线上支持</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <div class="logo-icon">🌊</div>
+                        <a href="index.html"><span>Independent Spectrum</span></a>
+                    </div>
+                    <p>Relieving Burdens, Enabling Independence</p>
+                    <p>减轻负担，实现独立</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="services.html">我们的服务</a></li>
+                        <li><a href="donate.html">支持我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系信息</h4>
+                    <p>📧 info@independentspectrum.org</p>
+                    <p>📱 +1 (555) 123-4567</p>
+                    <p>📍 线上支持服务</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Independent Spectrum. All rights reserved. | 网站由AI驱动开发</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="static/script.js"></script>
+    <script>
+        // 联系表单处理
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+
+            // 显示提交成功消息
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+
+            submitBtn.textContent = '发送中...';
+            submitBtn.disabled = true;
+
+            // 模拟表单提交
+            setTimeout(() => {
+                submitBtn.textContent = '消息已发送！';
+                submitBtn.style.background = '#10B981';
+
+                // 清空表单
+                this.reset();
+
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.style.background = '';
+                }, 3000);
+            }, 1500);
+
+            console.log('表单数据:', data);
+            // 这里可以集成实际的表单提交服务
+        });
+
+        // 表单验证增强
+        const inputs = document.querySelectorAll('input, select, textarea');
+        inputs.forEach(input => {
+            input.addEventListener('blur', function() {
+                if (this.checkValidity()) {
+                    this.classList.remove('invalid');
+                    this.classList.add('valid');
+                } else {
+                    this.classList.remove('valid');
+                    this.classList.add('invalid');
+                }
+            });
+        });
+    </script>
+
+    <style>
+        /* 联系表单样式 */
+        .contact-form-section {
+            padding: var(--spacing-2xl) 0;
+            background: var(--gray-50);
+        }
+
+        .contact-form-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-2xl);
+            align-items: start;
+        }
+
+        .form-intro h2 {
+            color: var(--deep-blue);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .form-intro p {
+            margin-bottom: var(--spacing-xl);
+            color: var(--gray-600);
+        }
+
+        .contact-details h3 {
+            color: var(--primary-blue);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .contact-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-details li {
+            padding: var(--spacing-sm) 0;
+            color: var(--gray-600);
+        }
+
+        .contact-form {
+            background: var(--white);
+            padding: var(--spacing-xl);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .form-group {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: var(--spacing-sm);
+            font-weight: 500;
+            color: var(--gray-900);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: var(--spacing-md);
+            border: 2px solid var(--gray-200);
+            border-radius: var(--radius-md);
+            font-family: var(--font-primary);
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-sm);
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-sm);
+            cursor: pointer;
+            font-weight: normal;
+        }
+
+        .checkmark {
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--gray-300);
+            border-radius: 4px;
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        .checkbox-label input:checked + .checkmark {
+            background: var(--primary-blue);
+            border-color: var(--primary-blue);
+        }
+
+        .checkbox-label input:checked + .checkmark::after {
+            content: '✓';
+            position: absolute;
+            color: white;
+            font-size: 14px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .privacy-note {
+            font-size: 0.875rem;
+            color: var(--gray-500);
+            margin-top: var(--spacing-md);
+        }
+
+        .privacy-note a {
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        /* FAQ样式 */
+        .faq {
+            padding: var(--spacing-2xl) 0;
+            background: var(--white);
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: var(--spacing-xl);
+        }
+
+        .faq-item {
+            background: var(--gray-50);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-md);
+            border-left: 4px solid var(--primary-blue);
+        }
+
+        .faq-item h3 {
+            color: var(--deep-blue);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .faq-item p {
+            color: var(--gray-600);
+            line-height: 1.6;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .contact-form-container {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-xl);
+            }
+
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>
