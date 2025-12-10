@@ -23,6 +23,15 @@
 **使命声明**:
 我们是一个主动的非营利组织，通过AI赋能工具，主动发现并支持自闭症儿童家庭。我们不等待家庭求助，而是使用创新技术主动提供干预和支持。
 
+**核心理念**:
+与许多试图"正常化"自闭症儿童的组织不同，我们相信：
+- **增加支持让他们能够独立生活** (Providing support for independent living)
+- **了解他们** (Understanding and accepting them as they are)
+- **让他们适应生活** (Helping them adapt to life on their terms)
+- **让他们生活得更幸福** (Supporting their happiness and well-being)
+
+我们庆祝神经多样性，致力于创建一个自闭症个体能够独立幸福生活的世界。
+
 **组织地址**:
 [您的组织地址]
 

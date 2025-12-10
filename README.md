@@ -2,6 +2,15 @@
 ## Our mission:
 We are a proactive non-profit organization that seeks out and supports families of children with autism before they even know they need help. Unlike traditional organizations that wait for families to find them, we take the initiative to identify, reach out to, and provide comprehensive support to children and families who need it most.
 
+## Our Philosophy: Acceptance, Independence & Happiness
+Unlike many autism organizations that focus on "normalizing" autistic children, we believe in:
+- **增加支持让他们能够独立生活** (Providing support for independent living)
+- **了解他们** (Understanding and accepting them as they are)
+- **让他们适应生活** (Helping them adapt to life on their terms)
+- **让他们生活得更幸福** (Supporting their happiness and well-being)
+
+We celebrate neurodiversity and focus on building a world where autistic individuals can thrive independently and happily.
+
 ## 我们的使命：
 我们是一个主动的非营利组织，在家庭知道自己需要帮助之前，就主动寻找并支持自闭症儿童的家庭。与传统的被动等待家庭寻求帮助的组织不同，我们主动识别、接触并为最需要的儿童和家庭提供全面支持。
 
