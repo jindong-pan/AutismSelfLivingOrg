@@ -1,18 +1,30 @@
 <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#1E40AF;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#3B82F6;stop-opacity:1" />
+    <!-- Gradient for water -->
+    <linearGradient id="iconWaterGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#60A5FA;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#93C5FD;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Gradient for tree -->
+    <linearGradient id="iconTreeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#16A34A;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#22C55E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4ADE80;stop-opacity:1" />
     </linearGradient>
   </defs>
 
-  <!-- Wave paths -->
-  <path d="M8,32 Q16,24 24,28 T40,26 L40,32 L8,32 Z" fill="url(#iconGradient)" opacity="0.8"/>
-  <path d="M8,29 Q16,21 24,25 T40,23 L40,29 L8,29 Z" fill="url(#iconGradient)" opacity="0.9"/>
-  <path d="M8,26 Q16,18 24,22 T40,20 L40,26 L8,26 Z" fill="url(#iconGradient)" opacity="1"/>
+  <!-- Peaceful waterside - calm water -->
+  <path d="M5,35 L5,38 L25,38 L25,35 Q15,32 5,35 Z" fill="url(#iconWaterGradient)" opacity="0.8"/>
+  <path d="M5,32 L5,35 L25,35 L25,32 Q15,29 5,32 Z" fill="url(#iconWaterGradient)" opacity="0.9"/>
+  <path d="M5,29 L5,32 L25,32 L25,29 Q15,26 5,29 Z" fill="url(#iconWaterGradient)" opacity="1"/>
 
-  <!-- Rising arrow -->
-  <polygon points="24,14 22,20 26,20" fill="#F59E0B"/>
-  <rect x="23.5" y="8" width="1" height="6" fill="#F59E0B"/>
+  <!-- Strong growing tree -->
+  <!-- Tree trunk -->
+  <rect x="14" y="22" width="3" height="10" fill="#8B4513"/>
+  <!-- Tree crown -->
+  <circle cx="15.5" cy="15" r="8" fill="url(#iconTreeGradient)"/>
+  <circle cx="12" cy="13" r="5" fill="url(#iconTreeGradient)" opacity="0.9"/>
+  <circle cx="19" cy="14" r="6" fill="url(#iconTreeGradient)" opacity="0.9"/>
 </svg>
