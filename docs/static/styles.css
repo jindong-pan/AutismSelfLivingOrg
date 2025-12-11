@@ -310,6 +310,12 @@ body {
     align-items: center;
 }
 
+.hero-logo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
 .spectrum-wave svg {
     width: 100%;
     max-width: 500px;
