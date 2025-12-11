@@ -15,38 +15,38 @@
     </linearGradient>
   </defs>
 
-  <!-- Peaceful waterside - flowing water curved around land -->
-  <path d="M4,30 Q7,27 10,30 Q13,33 17,30 Q20,28 24,31 Q26,33 29,30 L29,36 L4,36 Z" fill="url(#iconWaterGradient)" opacity="0.8"/>
-  <path d="M4,27 Q7,24 10,27 Q13,30 17,27 Q20,25 24,28 Q26,30 29,27 L29,33 L4,33 Z" fill="url(#iconWaterGradient)" opacity="0.9"/>
-  <path d="M4,24 Q7,21 10,24 Q13,27 17,24 Q20,22 24,25 Q26,27 29,24 L29,30 L4,30 Z" fill="url(#iconWaterGradient)" opacity="1"/>
+  <!-- Peaceful waterside - flowing water extended to right -->
+  <path d="M4,30 Q7,27 10,30 Q13,33 17,30 Q20,28 24,31 Q26,33 29,30 Q31,28 34,31 Q37,33 40,30 L40,36 L4,36 Z" fill="url(#iconWaterGradient)" opacity="0.8"/>
+  <path d="M4,27 Q7,24 10,27 Q13,30 17,27 Q20,25 24,28 Q26,30 29,27 Q31,25 34,28 Q37,30 40,27 L40,33 L4,33 Z" fill="url(#iconWaterGradient)" opacity="0.9"/>
+  <path d="M4,24 Q7,21 10,24 Q13,27 17,24 Q20,22 24,25 Q26,27 29,24 Q31,22 34,25 Q37,27 40,24 L40,30 L4,30 Z" fill="url(#iconWaterGradient)" opacity="1"/>
 
-  <!-- Small gentle water waves - peaceful and calm -->
-  <path d="M4,26 Q6,25.5 8,26 Q10,26.5 12,26 Q14,25.5 16,26 Q18,26.5 20,26 Q22,25.5 24,26 Q26,26.5 28,26 Q29,26.5 29,26" stroke="#60A5FA" stroke-width="0.5" fill="none" opacity="0.4"/>
-  <path d="M4,29 Q6,28.5 8,29 Q10,29.5 12,29 Q14,28.5 16,29 Q18,29.5 20,29 Q22,28.5 24,29 Q26,29.5 28,29 Q29,29.5 29,29" stroke="#60A5FA" stroke-width="0.5" fill="none" opacity="0.3"/>
+  <!-- Barely perceptible water ripples - minimal disturbance -->
+  <path d="M4,26 Q4.2,25.8 5,26 Q5.2,26.2 6,26 Q6.2,25.8 7,26 Q7.2,26.2 8,26 Q8.2,25.8 9,26 Q9.2,26.2 10,26 Q10.2,25.8 11,26 Q11.2,26.2 12,26 Q12.2,25.8 13,26 Q13.2,26.2 14,26 Q14.2,25.8 15,26 Q15.2,26.2 16,26 Q16.2,25.8 17,26 Q17.2,26.2 18,26 Q18.2,25.8 19,26 Q19.2,26.2 20,26 Q20.2,25.8 21,26 Q21.2,26.2 22,26 Q22.2,25.8 23,26 Q23.2,26.2 24,26 Q24.2,25.8 25,26 Q25.2,26.2 26,26 Q26.2,25.8 27,26 Q27.2,26.2 28,26 Q28.2,25.8 29,26 Q29.2,26.2 30,26 Q30.2,25.8 31,26 Q31.2,26.2 32,26 Q32.2,25.8 33,26 Q33.2,26.2 34,26 Q34.2,25.8 35,26 Q35.2,26.2 36,26 Q36.2,25.8 37,26 Q37.2,26.2 38,26 Q38.2,25.8 39,26 Q39.2,26.2 40,26" stroke="#60A5FA" stroke-width="0.2" fill="none" opacity="0.15"/>
+  <path d="M4,29 Q4.2,28.8 5,29 Q5.2,29.2 6,29 Q6.2,28.8 7,29 Q7.2,29.2 8,29 Q8.2,28.8 9,29 Q9.2,29.2 10,29 Q10.2,28.8 11,29 Q11.2,29.2 12,29 Q12.2,28.8 13,29 Q13.2,29.2 14,29 Q14.2,28.8 15,29 Q15.2,29.2 16,29 Q16.2,28.8 17,29 Q17.2,29.2 18,29 Q18.2,28.8 19,29 Q19.2,29.2 20,29 Q20.2,28.8 21,29 Q21.2,29.2 22,29 Q22.2,28.8 23,29 Q23.2,29.2 24,29 Q24.2,28.8 25,29 Q25.2,29.2 26,29 Q26.2,28.8 27,29 Q27.2,29.2 28,29 Q28.2,28.8 29,29 Q29.2,29.2 30,29 Q30.2,28.8 31,29 Q31.2,29.2 32,29 Q32.2,28.8 33,29 Q33.2,29.2 34,29 Q34.2,28.8 35,29 Q35.2,29.2 36,29 Q36.2,28.8 37,29 Q37.2,29.2 38,29 Q38.2,28.8 39,29 Q39.2,29.2 40,29" stroke="#60A5FA" stroke-width="0.2" fill="none" opacity="0.1"/>
 
-  <!-- Larger land area curved by flowing water -->
-  <path d="M17,30 Q20,32 24,30 Q26,28 29,31 L29,36 Q26,35 24,36 Q20,35 17,36 Z" fill="#D4A574" opacity="0.7"/>
-  <path d="M17,32 Q20,34 24,32 Q26,30 29,33 L29,38 Q26,37 24,38 Q20,37 17,38 Z" fill="#D4A574" opacity="0.5"/>
+  <!-- Larger land area curved by flowing water - extended -->
+  <path d="M17,30 Q20,32 24,30 Q26,28 29,31 Q31,33 35,30 Q37,28 40,31 L40,36 Q37,35 35,36 Q31,35 29,36 Q26,35 24,36 Q20,35 17,36 Z" fill="#D4A574" opacity="0.7"/>
+  <path d="M17,32 Q20,34 24,32 Q26,30 29,33 Q31,35 35,32 Q37,30 40,33 L40,38 Q37,37 35,38 Q31,37 29,38 Q26,37 24,38 Q20,37 17,38 Z" fill="#D4A574" opacity="0.5"/>
 
   <!-- Strong growing tree solidly planted on larger land -->
-  <!-- Tree trunk solidly on land -->
-  <rect x="21" y="18" width="4" height="15" fill="#8B4513"/>
-  <!-- Extensive thin and long tree roots - realistic spread -->
-  <!-- Primary long roots -->
-  <path d="M21,33 Q17,32 11,34 Q12,35 16,34 Q18,32 21,33" fill="none" stroke="#654321" stroke-width="1" opacity="0.9"/>
-  <path d="M25,33 Q29,32 35,34 Q34,35 30,34 Q28,32 25,33" fill="none" stroke="#654321" stroke-width="1" opacity="0.9"/>
+  <!-- Tree trunk solidly on extended land -->
+  <rect x="28" y="18" width="4" height="15" fill="#8B4513"/>
+  <!-- Extensive thin and long tree roots - connected to trunk base -->
+  <!-- Primary long roots emerging directly from trunk -->
+  <path d="M28,33 Q25,34 20,33 Q21,35 24,34 Q26,33 28,33" fill="none" stroke="#654321" stroke-width="1" opacity="0.9"/>
+  <path d="M32,33 Q35,34 40,33 Q39,35 36,34 Q34,33 32,33" fill="none" stroke="#654321" stroke-width="1" opacity="0.9"/>
   <!-- Secondary long roots -->
-  <path d="M20,35 Q16,34 10,36 Q11,37 15,36 Q17,34 20,35" fill="none" stroke="#654321" stroke-width="0.8" opacity="0.8"/>
-  <path d="M26,35 Q30,34 36,36 Q35,37 31,36 Q29,34 26,35" fill="none" stroke="#654321" stroke-width="0.8" opacity="0.8"/>
+  <path d="M27,33 Q24,35 19,34 Q20,36 23,35 Q25,33 27,33" fill="none" stroke="#654321" stroke-width="0.8" opacity="0.8"/>
+  <path d="M33,33 Q36,35 41,34 Q40,36 37,35 Q35,33 33,33" fill="none" stroke="#654321" stroke-width="0.8" opacity="0.8"/>
   <!-- Tertiary thin roots -->
-  <path d="M22,37 Q18,36 12,38 Q13,39 17,38 Q19,36 22,37" fill="none" stroke="#654321" stroke-width="0.5" opacity="0.7"/>
-  <path d="M24,37 Q28,36 34,38 Q33,39 29,38 Q27,36 24,37" fill="none" stroke="#654321" stroke-width="0.5" opacity="0.7"/>
+  <path d="M29,33 Q26,37 21,36 Q22,38 25,37 Q27,33 29,33" fill="none" stroke="#654321" stroke-width="0.5" opacity="0.7"/>
+  <path d="M31,33 Q34,37 39,36 Q38,38 35,37 Q33,33 31,33" fill="none" stroke="#654321" stroke-width="0.5" opacity="0.7"/>
   <!-- Fine root tendrils -->
-  <path d="M21,39 Q17,38 11,40 Q12,41 16,40 Q18,38 21,39" fill="none" stroke="#654321" stroke-width="0.3" opacity="0.6"/>
-  <path d="M25,39 Q29,38 35,40 Q34,41 30,40 Q28,38 25,39" fill="none" stroke="#654321" stroke-width="0.3" opacity="0.6"/>
+  <path d="M28,33 Q25,38 20,37 Q21,39 24,38 Q26,33 28,33" fill="none" stroke="#654321" stroke-width="0.3" opacity="0.6"/>
+  <path d="M32,33 Q35,38 40,37 Q39,39 36,38 Q34,33 32,33" fill="none" stroke="#654321" stroke-width="0.3" opacity="0.6"/>
 
-  <!-- Tree crown -->
-  <circle cx="23" cy="12" r="9" fill="url(#iconTreeGradient)"/>
-  <circle cx="19" cy="10" r="6" fill="url(#iconTreeGradient)" opacity="0.9"/>
-  <circle cx="27" cy="11" r="7" fill="url(#iconTreeGradient)" opacity="0.9"/>
+  <!-- Tree crown on extended land -->
+  <circle cx="30" cy="12" r="9" fill="url(#iconTreeGradient)"/>
+  <circle cx="26" cy="10" r="6" fill="url(#iconTreeGradient)" opacity="0.9"/>
+  <circle cx="34" cy="11" r="7" fill="url(#iconTreeGradient)" opacity="0.9"/>
 </svg>

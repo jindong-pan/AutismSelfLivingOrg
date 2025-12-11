@@ -23,64 +23,68 @@
   <!-- Background circle -->
   <circle cx="40" cy="40" r="35" fill="white" filter="url(#shadow)"/>
 
-  <!-- Peaceful waterside - flowing water curved around land -->
-  <path d="M8,45 Q12,42 16,45 Q20,48 26,45 Q30,43 35,46 Q38,48 42,45 L42,55 L8,55 Z" fill="url(#waterGradient)" opacity="0.8"/>
-  <path d="M8,42 Q12,39 16,42 Q20,45 26,42 Q30,40 35,43 Q38,45 42,42 L42,52 L8,52 Z" fill="url(#waterGradient)" opacity="0.9"/>
-  <path d="M8,39 Q12,36 16,39 Q20,42 26,39 Q30,37 35,40 Q38,42 42,39 L42,49 L8,49 Z" fill="url(#waterGradient)" opacity="1"/>
+  <!-- Peaceful waterside - flowing water extended to right -->
+  <path d="M8,45 Q12,42 16,45 Q20,48 26,45 Q30,43 35,46 Q38,48 42,45 Q46,43 50,46 Q54,48 58,45 Q62,43 66,46 Q70,48 74,45 L74,55 L8,55 Z" fill="url(#waterGradient)" opacity="0.8"/>
+  <path d="M8,42 Q12,39 16,42 Q20,45 26,42 Q30,40 35,43 Q38,45 42,42 Q46,40 50,43 Q54,45 58,42 Q62,40 66,43 Q70,45 74,42 L74,52 L8,52 Z" fill="url(#waterGradient)" opacity="0.9"/>
+  <path d="M8,39 Q12,36 16,39 Q20,42 26,39 Q30,37 35,40 Q38,42 42,39 Q46,37 50,40 Q54,42 58,39 Q62,37 66,40 Q70,42 74,39 L74,49 L8,49 Z" fill="url(#waterGradient)" opacity="1"/>
 
-  <!-- Small gentle water waves - peaceful and calm -->
-  <path d="M8,41 Q10,40.5 12,41 Q14,41.5 16,41 Q18,40.5 20,41 Q22,41.5 24,41 Q26,40.5 28,41 Q30,41.5 32,41 Q34,40.5 36,41 Q38,41.5 40,41 Q42,41.5 42,41" stroke="#60A5FA" stroke-width="0.8" fill="none" opacity="0.4"/>
-  <path d="M8,44 Q10,43.5 12,44 Q14,44.5 16,44 Q18,43.5 20,44 Q22,44.5 24,44 Q26,43.5 28,44 Q30,44.5 32,44 Q34,43.5 36,44 Q38,44.5 40,44 Q42,44.5 42,44" stroke="#60A5FA" stroke-width="0.8" fill="none" opacity="0.3"/>
-  <path d="M8,47 Q10,46.5 12,47 Q14,47.5 16,47 Q18,46.5 20,47 Q22,47.5 24,47 Q26,46.5 28,47 Q30,47.5 32,47 Q34,46.5 36,47 Q38,47.5 40,47 Q42,47.5 42,47" stroke="#60A5FA" stroke-width="0.8" fill="none" opacity="0.2"/>
+  <!-- Barely perceptible water ripples - minimal disturbance -->
+  <path d="M8,41 Q8.2,40.8 9,41 Q9.2,41.2 10,41 Q10.2,40.8 11,41 Q11.2,41.2 12,41 Q12.2,40.8 13,41 Q13.2,41.2 14,41 Q14.2,40.8 15,41 Q15.2,41.2 16,41 Q16.2,40.8 17,41 Q17.2,41.2 18,41 Q18.2,40.8 19,41 Q19.2,41.2 20,41 Q20.2,40.8 21,41 Q21.2,41.2 22,41 Q22.2,40.8 23,41 Q23.2,41.2 24,41 Q24.2,40.8 25,41 Q25.2,41.2 26,41 Q26.2,40.8 27,41 Q27.2,41.2 28,41 Q28.2,40.8 29,41 Q29.2,41.2 30,41 Q30.2,40.8 31,41 Q31.2,41.2 32,41 Q32.2,40.8 33,41 Q33.2,41.2 34,41 Q34.2,40.8 35,41 Q35.2,41.2 36,41 Q36.2,40.8 37,41 Q37.2,41.2 38,41 Q38.2,40.8 39,41 Q39.2,41.2 40,41 Q40.2,40.8 41,41 Q41.2,41.2 42,41 Q42.2,40.8 43,41 Q43.2,41.2 44,41 Q44.2,40.8 45,41 Q45.2,41.2 46,41 Q46.2,40.8 47,41 Q47.2,41.2 48,41 Q48.2,40.8 49,41 Q49.2,41.2 50,41 Q50.2,40.8 51,41 Q51.2,41.2 52,41 Q52.2,40.8 53,41 Q53.2,41.2 54,41 Q54.2,40.8 55,41 Q55.2,41.2 56,41 Q56.2,40.8 57,41 Q57.2,41.2 58,41 Q58.2,40.8 59,41 Q59.2,41.2 60,41 Q60.2,40.8 61,41 Q61.2,41.2 62,41 Q62.2,40.8 63,41 Q63.2,41.2 64,41 Q64.2,40.8 65,41 Q65.2,41.2 66,41 Q66.2,40.8 67,41 Q67.2,41.2 68,41 Q68.2,40.8 69,41 Q69.2,41.2 70,41 Q70.2,40.8 71,41 Q71.2,41.2 72,41 Q72.2,40.8 73,41 Q73.2,41.2 74,41" stroke="#60A5FA" stroke-width="0.3" fill="none" opacity="0.15"/>
+  <path d="M8,44 Q8.2,43.8 9,44 Q9.2,44.2 10,44 Q10.2,43.8 11,44 Q11.2,44.2 12,44 Q12.2,43.8 13,44 Q13.2,44.2 14,44 Q14.2,43.8 15,44 Q15.2,44.2 16,44 Q16.2,43.8 17,44 Q17.2,44.2 18,44 Q18.2,43.8 19,44 Q19.2,44.2 20,44 Q20.2,43.8 21,44 Q21.2,44.2 22,44 Q22.2,43.8 23,44 Q23.2,44.2 24,44 Q24.2,43.8 25,44 Q25.2,44.2 26,44 Q26.2,43.8 27,44 Q27.2,44.2 28,44 Q28.2,43.8 29,44 Q29.2,44.2 30,44 Q30.2,43.8 31,44 Q31.2,44.2 32,44 Q32.2,43.8 33,44 Q33.2,44.2 34,44 Q34.2,43.8 35,44 Q35.2,44.2 36,44 Q36.2,43.8 37,44 Q37.2,44.2 38,44 Q38.2,43.8 39,44 Q39.2,44.2 40,44 Q40.2,43.8 41,44 Q41.2,44.2 42,44 Q42.2,43.8 43,44 Q43.2,44.2 44,44 Q44.2,43.8 45,44 Q45.2,44.2 46,44 Q46.2,43.8 47,44 Q47.2,44.2 48,44 Q48.2,43.8 49,44 Q49.2,44.2 50,44 Q50.2,43.8 51,44 Q51.2,44.2 52,44 Q52.2,43.8 53,44 Q53.2,44.2 54,44 Q54.2,43.8 55,44 Q55.2,44.2 56,44 Q56.2,43.8 57,44 Q57.2,44.2 58,44 Q58.2,43.8 59,44 Q59.2,44.2 60,44 Q60.2,43.8 61,44 Q61.2,44.2 62,44 Q62.2,43.8 63,44 Q63.2,44.2 64,44 Q64.2,43.8 65,44 Q65.2,44.2 66,44 Q66.2,43.8 67,44 Q67.2,44.2 68,44 Q68.2,43.8 69,44 Q69.2,44.2 70,44 Q70.2,43.8 71,44 Q71.2,44.2 72,44 Q72.2,43.8 73,44 Q73.2,44.2 74,44" stroke="#60A5FA" stroke-width="0.3" fill="none" opacity="0.1"/>
+  <path d="M8,47 Q8.2,46.8 9,47 Q9.2,47.2 10,47 Q10.2,46.8 11,47 Q11.2,47.2 12,47 Q12.2,46.8 13,47 Q13.2,47.2 14,47 Q14.2,46.8 15,47 Q15.2,47.2 16,47 Q16.2,46.8 17,47 Q17.2,47.2 18,47 Q18.2,46.8 19,47 Q19.2,47.2 20,47 Q20.2,46.8 21,47 Q21.2,47.2 22,47 Q22.2,46.8 23,47 Q23.2,47.2 24,47 Q24.2,46.8 25,47 Q25.2,47.2 26,47 Q26.2,46.8 27,47 Q27.2,47.2 28,47 Q28.2,46.8 29,47 Q29.2,47.2 30,47 Q30.2,46.8 31,47 Q31.2,47.2 32,47 Q32.2,46.8 33,47 Q33.2,47.2 34,47 Q34.2,46.8 35,47 Q35.2,47.2 36,47 Q36.2,46.8 37,47 Q37.2,47.2 38,47 Q38.2,46.8 39,47 Q39.2,47.2 40,47 Q40.2,46.8 41,47 Q41.2,47.2 42,47 Q42.2,46.8 43,47 Q43.2,47.2 44,47 Q44.2,46.8 45,47 Q45.2,47.2 46,47 Q46.2,46.8 47,47 Q47.2,47.2 48,47 Q48.2,46.8 49,47 Q49.2,47.2 50,47 Q50.2,46.8 51,47 Q51.2,47.2 52,47 Q52.2,46.8 53,47 Q53.2,47.2 54,47 Q54.2,46.8 55,47 Q55.2,47.2 56,47 Q56.2,46.8 57,47 Q57.2,47.2 58,47 Q58.2,46.8 59,47 Q59.2,47.2 60,47 Q60.2,46.8 61,47 Q61.2,47.2 62,47 Q62.2,46.8 63,47 Q63.2,47.2 64,47 Q64.2,46.8 65,47 Q65.2,47.2 66,47 Q66.2,46.8 67,47 Q67.2,47.2 68,47 Q68.2,46.8 69,47 Q69.2,47.2 70,47 Q70.2,46.8 71,47 Q71.2,47.2 72,47 Q72.2,46.8 73,47 Q73.2,47.2 74,47" stroke="#60A5FA" stroke-width="0.3" fill="none" opacity="0.08"/>
 
-  <!-- Larger land area curved by flowing water -->
-  <path d="M26,45 Q30,47 35,45 Q38,43 42,46 L42,55 Q38,54 35,55 Q30,54 26,55 Z" fill="#D4A574" opacity="0.7"/>
-  <path d="M26,47 Q30,49 35,47 Q38,45 42,48 L42,57 Q38,56 35,57 Q30,56 26,57 Z" fill="#D4A574" opacity="0.5"/>
-  <path d="M26,49 Q30,51 35,49 Q38,47 42,50 L42,59 Q38,58 35,59 Q30,58 26,59 Z" fill="#D4A574" opacity="0.3"/>
+  <!-- Larger land area curved by flowing water - extended -->
+  <path d="M26,45 Q30,47 35,45 Q38,43 42,46 Q45,48 50,45 Q53,43 58,46 Q62,48 66,45 L66,55 Q62,54 58,55 Q53,54 50,55 Q45,54 42,55 Q38,54 35,55 Q30,54 26,55 Z" fill="#D4A574" opacity="0.7"/>
+  <path d="M26,47 Q30,49 35,47 Q38,45 42,48 Q45,50 50,47 Q53,45 58,48 Q62,50 66,47 L66,57 Q62,56 58,57 Q53,56 50,57 Q45,56 42,57 Q38,56 35,57 Q30,56 26,57 Z" fill="#D4A574" opacity="0.5"/>
+  <path d="M26,49 Q30,51 35,49 Q38,47 42,50 Q45,52 50,49 Q53,47 58,50 Q62,52 66,49 L66,59 Q62,58 58,59 Q53,58 50,59 Q45,58 42,59 Q38,58 35,59 Q30,58 26,59 Z" fill="#D4A574" opacity="0.3"/>
 
-  <!-- Small flowing ripples in water - very gentle -->
-  <circle cx="12" cy="43" r="0.3" fill="#93C5FD" opacity="0.5"/>
-  <circle cx="15" cy="40" r="0.2" fill="#93C5FD" opacity="0.3"/>
-  <circle cx="22" cy="45" r="0.25" fill="#93C5FD" opacity="0.4"/>
-  <circle cx="30" cy="42" r="0.2" fill="#93C5FD" opacity="0.3"/>
-  <circle cx="37" cy="47" r="0.3" fill="#93C5FD" opacity="0.5"/>
+  <!-- Tiny flowing ripples across extended water - extremely gentle -->
+  <circle cx="12" cy="43" r="0.15" fill="#93C5FD" opacity="0.4"/>
+  <circle cx="15" cy="40" r="0.1" fill="#93C5FD" opacity="0.25"/>
+  <circle cx="22" cy="45" r="0.12" fill="#93C5FD" opacity="0.35"/>
+  <circle cx="30" cy="42" r="0.1" fill="#93C5FD" opacity="0.25"/>
+  <circle cx="37" cy="47" r="0.15" fill="#93C5FD" opacity="0.4"/>
+  <circle cx="45" cy="43" r="0.12" fill="#93C5FD" opacity="0.35"/>
+  <circle cx="52" cy="46" r="0.1" fill="#93C5FD" opacity="0.25"/>
+  <circle cx="59" cy="42" r="0.15" fill="#93C5FD" opacity="0.4"/>
+  <circle cx="66" cy="45" r="0.1" fill="#93C5FD" opacity="0.3"/>
 
   <!-- Strong growing tree solidly planted on larger land -->
-  <!-- Tree trunk solidly on land -->
-  <rect x="32" y="35" width="5" height="18" fill="#8B4513"/>
-  <!-- Extensive thin and long tree roots - realistic spread -->
-  <!-- Primary long roots -->
-  <path d="M32,53 Q28,52 22,54 Q23,56 27,54 Q29,52 32,53" fill="none" stroke="#654321" stroke-width="1.5" opacity="0.9"/>
-  <path d="M38,53 Q42,52 48,54 Q47,56 43,54 Q41,52 38,53" fill="none" stroke="#654321" stroke-width="1.5" opacity="0.9"/>
+  <!-- Tree trunk solidly on extended land -->
+  <rect x="45" y="35" width="5" height="18" fill="#8B4513"/>
+  <!-- Extensive thin and long tree roots - connected to trunk base -->
+  <!-- Primary long roots emerging directly from trunk -->
+  <path d="M45,53 Q41,54 35,53 Q36,55 40,54 Q42,53 45,53" fill="none" stroke="#654321" stroke-width="1.5" opacity="0.9"/>
+  <path d="M50,53 Q54,54 60,53 Q59,55 55,54 Q53,53 50,53" fill="none" stroke="#654321" stroke-width="1.5" opacity="0.9"/>
   <!-- Secondary long roots -->
-  <path d="M30,55 Q26,54 20,56 Q21,58 25,56 Q27,54 30,55" fill="none" stroke="#654321" stroke-width="1.2" opacity="0.8"/>
-  <path d="M40,55 Q44,54 50,56 Q49,58 45,56 Q43,54 40,55" fill="none" stroke="#654321" stroke-width="1.2" opacity="0.8"/>
+  <path d="M43,53 Q39,55 33,54 Q34,56 38,55 Q40,53 43,53" fill="none" stroke="#654321" stroke-width="1.2" opacity="0.8"/>
+  <path d="M52,53 Q56,55 62,54 Q61,56 57,55 Q55,53 52,53" fill="none" stroke="#654321" stroke-width="1.2" opacity="0.8"/>
   <!-- Tertiary thin roots -->
-  <path d="M33,57 Q29,56 23,58 Q24,59 28,58 Q30,56 33,57" fill="none" stroke="#654321" stroke-width="0.8" opacity="0.7"/>
-  <path d="M37,57 Q41,56 47,58 Q46,59 42,58 Q40,56 37,57" fill="none" stroke="#654321" stroke-width="0.8" opacity="0.7"/>
+  <path d="M46,53 Q42,56 36,55 Q37,57 41,56 Q43,53 46,53" fill="none" stroke="#654321" stroke-width="0.8" opacity="0.7"/>
+  <path d="M49,53 Q53,56 59,55 Q58,57 54,56 Q52,53 49,53" fill="none" stroke="#654321" stroke-width="0.8" opacity="0.7"/>
   <!-- Fine root tendrils -->
-  <path d="M34,59 Q30,58 25,60 Q26,61 29,60 Q31,58 34,59" fill="none" stroke="#654321" stroke-width="0.5" opacity="0.6"/>
-  <path d="M36,59 Q40,58 45,60 Q44,61 41,60 Q39,58 36,59" fill="none" stroke="#654321" stroke-width="0.5" opacity="0.6"/>
+  <path d="M47,53 Q43,58 38,57 Q39,59 42,58 Q44,53 47,53" fill="none" stroke="#654321" stroke-width="0.5" opacity="0.6"/>
+  <path d="M48,53 Q52,58 57,57 Q56,59 53,58 Q51,53 48,53" fill="none" stroke="#654321" stroke-width="0.5" opacity="0.6"/>
   <!-- Very fine root hairs -->
-  <path d="M35,61 Q31,60 26,62 Q27,63 30,62 Q32,60 35,61" fill="none" stroke="#654321" stroke-width="0.3" opacity="0.5"/>
-  <path d="M35,63 Q39,62 44,64 Q43,65 40,64 Q38,62 35,63" fill="none" stroke="#654321" stroke-width="0.3" opacity="0.5"/>
+  <path d="M47.5,53 Q44,60 39,59 Q40,61 43,60 Q45,53 47.5,53" fill="none" stroke="#654321" stroke-width="0.3" opacity="0.5"/>
+  <path d="M47.5,53 Q51,60 56,59 Q55,61 52,60 Q50,53 47.5,53" fill="none" stroke="#654321" stroke-width="0.3" opacity="0.5"/>
   <!-- Additional spreading roots -->
-  <path d="M31,57 Q27,56 21,58 Q22,59 26,58 Q28,56 31,57" fill="none" stroke="#654321" stroke-width="0.6" opacity="0.7"/>
-  <path d="M39,57 Q43,56 49,58 Q48,59 44,58 Q42,56 39,57" fill="none" stroke="#654321" stroke-width="0.6" opacity="0.7"/>
-  <path d="M32,59 Q28,58 22,60 Q23,61 27,60 Q29,58 32,59" fill="none" stroke="#654321" stroke-width="0.4" opacity="0.6"/>
-  <path d="M38,59 Q42,58 48,60 Q47,61 43,60 Q41,58 38,59" fill="none" stroke="#654321" stroke-width="0.4" opacity="0.6"/>
+  <path d="M44,53 Q40,57 34,56 Q35,58 39,57 Q41,53 44,53" fill="none" stroke="#654321" stroke-width="0.6" opacity="0.7"/>
+  <path d="M51,53 Q55,57 61,56 Q60,58 56,57 Q54,53 51,53" fill="none" stroke="#654321" stroke-width="0.6" opacity="0.7"/>
+  <path d="M45,53 Q41,59 35,58 Q36,60 40,59 Q42,53 45,53" fill="none" stroke="#654321" stroke-width="0.4" opacity="0.6"/>
+  <path d="M50,53 Q54,59 60,58 Q59,60 55,59 Q53,53 50,53" fill="none" stroke="#654321" stroke-width="0.4" opacity="0.6"/>
 
-  <!-- Tree crown - lush and growing -->
-  <circle cx="34.5" cy="25" r="13" fill="url(#treeGradient)"/>
-  <circle cx="30" cy="22" r="9" fill="url(#treeGradient)" opacity="0.9"/>
-  <circle cx="39" cy="23" r="10" fill="url(#treeGradient)" opacity="0.9"/>
-  <circle cx="34.5" cy="18" r="7" fill="url(#treeGradient)" opacity="1"/>
+  <!-- Tree crown - lush and growing on extended land -->
+  <circle cx="47.5" cy="25" r="13" fill="url(#treeGradient)"/>
+  <circle cx="43" cy="22" r="9" fill="url(#treeGradient)" opacity="0.9"/>
+  <circle cx="52" cy="23" r="10" fill="url(#treeGradient)" opacity="0.9"/>
+  <circle cx="47.5" cy="18" r="7" fill="url(#treeGradient)" opacity="1"/>
 
   <!-- Growth rings on trunk (representing growth) -->
-  <circle cx="34.5" cy="40" r="1.8" fill="#A0522D" opacity="0.8"/>
-  <circle cx="34.5" cy="42" r="1.5" fill="#A0522D" opacity="0.7"/>
-  <circle cx="34.5" cy="44" r="1.2" fill="#A0522D" opacity="0.6"/>
-  <circle cx="34.5" cy="46" r="1" fill="#A0522D" opacity="0.5"/>
+  <circle cx="47.5" cy="40" r="1.8" fill="#A0522D" opacity="0.8"/>
+  <circle cx="47.5" cy="42" r="1.5" fill="#A0522D" opacity="0.7"/>
+  <circle cx="47.5" cy="44" r="1.2" fill="#A0522D" opacity="0.6"/>
+  <circle cx="47.5" cy="46" r="1" fill="#A0522D" opacity="0.5"/>
 
   <!-- Organization name text -->
   <text x="75" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1E40AF">Peaceful</text>
