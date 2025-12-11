@@ -108,22 +108,42 @@ def main():
     start_server_flag = False
 
     args = sys.argv[1:]
-    if '--server' in args:
-        start_server_flag = True
-    elif args and args[0].startswith('--since'):
-        try:
-            time_spec = args[0].split('--since')[1]
-            if time_spec.endswith('h'):
-                since_minutes = int(time_spec[:-1]) * 60
-            elif time_spec.endswith('m'):
-                since_minutes = int(time_spec[:-1])
-            else:
-                since_minutes = int(time_spec)
-        except:
-            print("❌ 时间参数格式错误，使用默认值: 1小时")
-    elif '--help' in args or '-h' in args:
-        print(__doc__)
-        return
+
+    # Parse arguments
+    i = 0
+    while i < len(args):
+        arg = args[i]
+        if arg == '--server':
+            start_server_flag = True
+        elif arg in ['--help', '-h']:
+            print(__doc__)
+            return
+        elif arg == '--since' and i + 1 < len(args):
+            try:
+                time_spec = args[i + 1]
+                if time_spec.endswith('h'):
+                    since_minutes = int(time_spec[:-1]) * 60
+                elif time_spec.endswith('m'):
+                    since_minutes = int(time_spec[:-1])
+                else:
+                    since_minutes = int(time_spec)
+                i += 1  # Skip the next argument
+            except:
+                print("❌ 时间参数格式错误，使用默认值: 1小时")
+        elif arg.startswith('--since'):
+            try:
+                time_spec = arg[7:]  # Remove '--since'
+                if time_spec.endswith('h'):
+                    since_minutes = int(time_spec[:-1]) * 60
+                elif time_spec.endswith('m'):
+                    since_minutes = int(time_spec[:-1])
+                else:
+                    since_minutes = int(time_spec)
+            except:
+                print("❌ 时间参数格式错误，使用默认值: 1小时")
+        else:
+            print(f"❌ 未知参数: {arg}，使用默认设置")
+        i += 1
 
     # 检查服务器状态
     is_running, status = check_server_status()
