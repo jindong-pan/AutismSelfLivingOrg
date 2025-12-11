@@ -1,0 +1,18 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1E40AF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#93C5FD;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Wave paths -->
+  <path d="M8,32 Q16,24 24,28 T40,26 L40,32 L8,32 Z" fill="url(#iconGradient)" opacity="0.8"/>
+  <path d="M8,29 Q16,21 24,25 T40,23 L40,29 L8,29 Z" fill="url(#iconGradient)" opacity="0.9"/>
+  <path d="M8,26 Q16,18 24,22 T40,20 L40,26 L8,26 Z" fill="url(#iconGradient)" opacity="1"/>
+
+  <!-- Rising arrow -->
+  <polygon points="24,14 22,20 26,20" fill="#F59E0B"/>
+  <rect x="23.5" y="8" width="1" height="6" fill="#F59E0B"/>
+</svg>

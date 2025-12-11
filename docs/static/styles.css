@@ -138,6 +138,12 @@ body {
     color: var(--primary-blue);
 }
 
+.logo-icon-svg {
+    width: 40px;
+    height: 40px;
+    margin-right: var(--spacing-sm);
+}
+
 .nav-links {
     display: flex;
     list-style: none;
