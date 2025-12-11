@@ -20,9 +20,9 @@
   <path d="M4,27 Q7,24 10,27 Q13,30 17,27 Q20,25 24,28 Q26,30 29,27 L29,33 L4,33 Z" fill="url(#iconWaterGradient)" opacity="0.9"/>
   <path d="M4,24 Q7,21 10,24 Q13,27 17,24 Q20,22 24,25 Q26,27 29,24 L29,30 L4,30 Z" fill="url(#iconWaterGradient)" opacity="1"/>
 
-  <!-- Flowing water waves -->
-  <path d="M4,26 Q8,23 12,26 Q16,29 21,26 Q25,23 29,26" stroke="#60A5FA" stroke-width="0.8" fill="none" opacity="0.6"/>
-  <path d="M4,29 Q8,26 12,29 Q16,32 21,29 Q25,26 29,29" stroke="#60A5FA" stroke-width="0.8" fill="none" opacity="0.4"/>
+  <!-- Small gentle water waves - peaceful and calm -->
+  <path d="M4,26 Q6,25.5 8,26 Q10,26.5 12,26 Q14,25.5 16,26 Q18,26.5 20,26 Q22,25.5 24,26 Q26,26.5 28,26 Q29,26.5 29,26" stroke="#60A5FA" stroke-width="0.5" fill="none" opacity="0.4"/>
+  <path d="M4,29 Q6,28.5 8,29 Q10,29.5 12,29 Q14,28.5 16,29 Q18,29.5 20,29 Q22,28.5 24,29 Q26,29.5 28,29 Q29,29.5 29,29" stroke="#60A5FA" stroke-width="0.5" fill="none" opacity="0.3"/>
 
   <!-- Larger land area curved by flowing water -->
   <path d="M17,30 Q20,32 24,30 Q26,28 29,31 L29,36 Q26,35 24,36 Q20,35 17,36 Z" fill="#D4A574" opacity="0.7"/>
