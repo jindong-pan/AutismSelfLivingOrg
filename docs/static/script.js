@@ -1,4 +1,4 @@
-// Independent Spectrum - 网站交互脚本
+// Peaceful Independence - 网站交互脚本
 
 document.addEventListener('DOMContentLoaded', function() {
     // 移动导航菜单
@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.classList.add('loaded');
 
         // 初始化页面标题
-        document.title = 'Independent Spectrum | Relieving Burdens, Enabling Independence';
+        document.title = 'Peaceful Independence | Helping Special Children Grow';
     });
 
     // 性能监控 (可选)
