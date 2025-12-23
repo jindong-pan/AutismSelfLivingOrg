@@ -1,9 +1,11 @@
-# Peaceful Independence - 平安独立
-## Our mission:
+# Peaceful Independence
+
+[中文](READMEcn.md) | [Español](READMEes.md) | [English](README.md)
+
+## Our Mission
 **Peaceful Independence** is a proactive non-profit organization that seeks out and supports families of children with autism before they even know they need help. Unlike traditional organizations that wait for families to find them, we take the initiative to identify, reach out to, and provide comprehensive support to children and families who need it most.
 
 **Tagline: "Relieving Burdens, Finding Peaceful Independence"**
-*(减轻负担，实现平安独立)*
 
 We understand the heavy burden parents carry - the hopelessness, exhaustion, and overwhelming responsibility. Our mission is to **lighten that load** while empowering autistic individuals to live independently and happily.
 
@@ -12,21 +14,17 @@ We understand the heavy burden parents carry - the hopelessness, exhaustion, and
 We believe every autistic individual deserves understanding, acceptance, and the support they need to live independently and happily. While we don't focus on "normalizing" autistic children to fit neurotypical standards, we recognize that some behaviors may need gentle, understanding-based support for safety and well-being.
 
 Our balanced approach emphasizes:
-- **增加支持让他们能够独立生活** (Providing support for independent living)
-- **了解他们** (Understanding and accepting them as they are)
-- **让他们适应生活** (Helping them adapt to life on their terms)
-- **让他们生活得更幸福** (Supporting their happiness and well-being)
-- **基于深度理解的温和行为支持** (Gentle, understanding-based behavioral support when needed)
+- Providing support for independent living
+- Understanding and accepting them as they are
+- Helping them adapt to life on their terms
+- Supporting their happiness and well-being
+- Gentle, understanding-based behavioral support when needed
 
 We embrace neurodiversity while ensuring every individual can thrive safely and independently, while **relieving parents from the crushing weight of hopelessness and isolation**.
 
-## 我们的使命：
-我们是一个主动的非营利组织，在家庭知道自己需要帮助之前，就主动寻找并支持自闭症儿童的家庭。与传统的被动等待家庭寻求帮助的组织不同，我们主动识别、接触并为最需要的儿童和家庭提供全面支持。
-
-## Core Philosophy - 核心理念:
-**主动寻找，而不是等待被发现**
+## Core Philosophy
+**Seeking out support rather than waiting to be found**
 - We don't wait for parents to find us; we find families who need support
-- 我们不等待家长找到我们；而是主动找到需要支持的家庭
 
 ## Todo:
 ### 核心使命与策略 - Core Mission & Strategy

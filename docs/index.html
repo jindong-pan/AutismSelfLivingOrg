@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peaceful Independence - Relieving Burdens, Finding Peaceful Independence</title>
-    <meta name="description" content="Peaceful Independence: Helping all special children grow into peaceful, independent lives. We support autistic children and families with proactive AI-powered tools and understanding-based care.">
+    <meta name="description" content="Peaceful Independence: Helping all special children grow into peaceful, independent lives. We partner with local schools and churches to create supportive community events and provide caring assistance to families.">
     <link rel="stylesheet" href="static/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="static/logo-icon.svg">
@@ -29,6 +29,8 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#donate">Support Us</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html" class="btn-nav">Sign Up</a></li>
                 </ul>
                 <div class="hamburger">
                     <span></span>
@@ -47,7 +49,7 @@
                 <p class="tagline">Relieving Burdens, Enabling Independence</p>
                 <p class="hero-description">
                     Our mission is clear: to help all special children grow into peaceful, independent lives.<br>
-                    We provide proactive support for autistic children and their families, using AI-powered tools to identify needs early and offer understanding-based care that celebrates neurodiversity while ensuring safety and well-being.
+                    We work closely with local schools and churches to create welcoming community events where families can find the support and understanding they need in a caring, respectful environment.
                 </p>
                 <div class="hero-buttons">
                     <a href="#donate" class="btn btn-primary">Support Our Mission</a>
@@ -77,8 +79,8 @@
                 </div>
                 <div class="mission-card">
                     <div class="mission-icon">🤝</div>
-                    <h3>Understanding Support</h3>
-                    <p>We provide gentle, understanding-based support that respects each child's individual needs, using AI tools to identify challenges early and offer timely, compassionate care.</p>
+                    <h3>Community Partnerships</h3>
+                    <p>We build strong partnerships with local schools and churches to create a supportive network where families can access understanding care and resources through welcoming community events.</p>
                 </div>
                 <div class="mission-card">
                     <div class="mission-icon">🚀</div>
@@ -100,9 +102,9 @@
             <h2>Our Vision</h2>
             <div class="stats-grid">
                 <div class="stat-card">
-                    <div class="stat-number">AI</div>
-                    <div class="stat-label">Powered Tools</div>
-                    <p>Using AI to proactively identify families needing help</p>
+                    <div class="stat-number">🤝</div>
+                    <div class="stat-label">Community Partners</div>
+                    <p>Working with local schools and churches to reach families</p>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">🎯</div>
@@ -162,6 +164,29 @@
             </div>
         </div>
     </footer>
+
+    <!-- Firebase SDK -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-analytics.js";
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyDz3DtqF6RuJoKiRfcznepfO5zyXwcKMLc",
+            authDomain: "peaceful-independence.firebaseapp.com",
+            projectId: "peaceful-independence",
+            storageBucket: "peaceful-independence.firebasestorage.app",
+            messagingSenderId: "989115528458",
+            appId: "1:989115528458:web:36615bf180d2110d1576f3",
+            measurementId: "G-30HKN7XFT5"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
 
     <script src="static/script.js"></script>
 </body>
