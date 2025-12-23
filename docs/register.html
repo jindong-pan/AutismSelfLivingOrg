@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册账号 - Peaceful Independence</title>
+    <meta name="description" content="加入Peaceful Independence，注册账号获取个性化支持和服务。">
+    <link rel="stylesheet" href="static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="static/logo-icon.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="static/logo-icon.svg" alt="Peaceful Independence Logo" class="logo-icon-svg">
+                <span>Peaceful Independence</span>
+            </div>
+            <div class="nav-right">
+                <div class="language-links">
+                    <a href="register-zh.html" class="lang-link">中文</a>
+                    <span class="lang-separator">|</span>
+                    <a href="register-es.html" class="lang-link">Español</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="login.html">登录</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Register Section -->
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-header">
+                    <h1>注册账号</h1>
+                    <p>加入我们的社区，获取个性化支持和服务</p>
+                </div>
+
+                <form id="registerForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="firstName">名字 *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">姓氏 *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">邮箱地址 *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">密码 *</label>
+                        <input type="password" id="password" name="password" required minlength="8">
+                        <small class="form-hint">密码至少需要8个字符</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">确认密码 *</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms" class="checkbox-label">
+                            我同意 <a href="#" target="_blank">使用条款</a> 和 <a href="#" target="_blank">隐私政策</a>
+                        </label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter" class="checkbox-label">
+                            订阅我们的通讯，获取最新更新和支持信息
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">注册账号</button>
+                </form>
+
+                <div class="auth-footer">
+                    <p>已经有账号？<a href="login.html">立即登录</a></p>
+                </div>
+
+                <div id="message" class="message" style="display: none;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <img src="static/logo-icon.svg" alt="Peaceful Independence Logo" class="logo-icon-svg">
+                        <span>Peaceful Independence</span>
+                    </div>
+                    <p>Relieving Burdens, Enabling Independence</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="services.html">我们的服务</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系信息</h4>
+                    <p>📧 info@independentspectrum.org</p>
+                    <p>📱 +1 (555) 123-4567</p>
+                    <p>📍 在线支持服务</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Peaceful Independence. All rights reserved. | Website powered by AI</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script type="module">
+        // 导入Firebase模块
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js';
+        import { getAuth, createUserWithEmailAndPassword, updateProfile } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js';
+
+        // Firebase配置
+        const firebaseConfig = {
+            apiKey: "AIzaSyDz3DtqF6RuJoKiRfcznepfO5zyXwcKMLc",
+            authDomain: "peaceful-independence.firebaseapp.com",
+            projectId: "peaceful-independence",
+            storageBucket: "peaceful-independence.firebasestorage.app",
+            messagingSenderId: "989115528458",
+            appId: "1:989115528458:web:36615bf180d2110d1576f3",
+            measurementId: "G-30HKN7XFT5"
+        };
+
+        // 初始化Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        // 注册表单处理
+        document.getElementById('registerForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const termsAccepted = document.getElementById('terms').checked;
+
+            // 表单验证
+            if (password !== confirmPassword) {
+                showMessage('密码不匹配', 'error');
+                return;
+            }
+
+            if (!termsAccepted) {
+                showMessage('请同意使用条款和隐私政策', 'error');
+                return;
+            }
+
+            try {
+                // 显示加载状态
+                const submitBtn = document.querySelector('button[type="submit"]');
+                submitBtn.textContent = '注册中...';
+                submitBtn.disabled = true;
+
+                // 创建用户账户
+                const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+                const user = userCredential.user;
+
+                // 更新用户资料
+                await updateProfile(user, {
+                    displayName: `${firstName} ${lastName}`
+                });
+
+                showMessage('注册成功！正在跳转到仪表板...', 'success');
+
+                // 延迟跳转到仪表板
+                setTimeout(() => {
+                    window.location.href = 'dashboard.html';
+                }, 2000);
+
+            } catch (error) {
+                console.error('注册错误:', error);
+                let errorMessage = '注册失败，请重试';
+
+                switch (error.code) {
+                    case 'auth/email-already-in-use':
+                        errorMessage = '此邮箱已被注册';
+                        break;
+                    case 'auth/invalid-email':
+                        errorMessage = '邮箱格式不正确';
+                        break;
+                    case 'auth/weak-password':
+                        errorMessage = '密码强度不足';
+                        break;
+                    case 'auth/network-request-failed':
+                        errorMessage = '网络连接失败，请检查网络后重试';
+                        break;
+                }
+
+                showMessage(errorMessage, 'error');
+
+                // 恢复按钮状态
+                const submitBtn = document.querySelector('button[type="submit"]');
+                submitBtn.textContent = '注册账号';
+                submitBtn.disabled = false;
+            }
+        });
+
+        // 显示消息函数
+        function showMessage(message, type) {
+            const messageDiv = document.getElementById('message');
+            messageDiv.textContent = message;
+            messageDiv.className = `message ${type}`;
+            messageDiv.style.display = 'block';
+
+            // 3秒后自动隐藏
+            setTimeout(() => {
+                messageDiv.style.display = 'none';
+            }, 5000);
+        }
+
+        // 检查用户是否已登录
+        auth.onAuthStateChanged((user) => {
+            if (user) {
+                // 用户已登录，重定向到仪表板
+                window.location.href = 'dashboard.html';
+            }
+        });
+    </script>
+
+    <script src="static/script.js"></script>
+</body>
+</html>

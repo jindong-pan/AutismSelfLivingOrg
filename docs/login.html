@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录账号 - Peaceful Independence</title>
+    <meta name="description" content="登录到您的Peaceful Independence账号，访问个性化支持和服务。">
+    <link rel="stylesheet" href="static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="static/logo-icon.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="static/logo-icon.svg" alt="Peaceful Independence Logo" class="logo-icon-svg">
+                <span>Peaceful Independence</span>
+            </div>
+            <div class="nav-right">
+                <div class="language-links">
+                    <a href="login-zh.html" class="lang-link">中文</a>
+                    <span class="lang-separator">|</span>
+                    <a href="login-es.html" class="lang-link">Español</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="register.html">注册</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Section -->
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-header">
+                    <h1>登录账号</h1>
+                    <p>欢迎回来！请登录您的账号</p>
+                </div>
+
+                <form id="loginForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="email">邮箱地址 *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">密码 *</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember" class="checkbox-label">
+                            记住我
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">登录</button>
+                </form>
+
+                <div class="auth-footer">
+                    <p>忘记密码？<a href="#" id="forgotPassword">重置密码</a></p>
+                    <p>还没有账号？<a href="register.html">立即注册</a></p>
+                </div>
+
+                <div id="message" class="message" style="display: none;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <img src="static/logo-icon.svg" alt="Peaceful Independence Logo" class="logo-icon-svg">
+                        <span>Peaceful Independence</span>
+                    </div>
+                    <p>Relieving Burdens, Enabling Independence</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="services.html">我们的服务</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系信息</h4>
+                    <p>📧 info@independentspectrum.org</p>
+                    <p>📱 +1 (555) 123-4567</p>
+                    <p>📍 在线支持服务</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Peaceful Independence. All rights reserved. | Website powered by AI</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script type="module">
+        // 导入Firebase模块
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js';
+        import { getAuth, signInWithEmailAndPassword, sendPasswordResetEmail } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js';
+
+        // Firebase配置
+        const firebaseConfig = {
+            apiKey: "AIzaSyDz3DtqF6RuJoKiRfcznepfO5zyXwcKMLc",
+            authDomain: "peaceful-independence.firebaseapp.com",
+            projectId: "peaceful-independence",
+            storageBucket: "peaceful-independence.firebasestorage.app",
+            messagingSenderId: "989115528458",
+            appId: "1:989115528458:web:36615bf180d2110d1576f3",
+            measurementId: "G-30HKN7XFT5"
+        };
+
+        // 初始化Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        // 登录表单处理
+        document.getElementById('loginForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            try {
+                // 显示加载状态
+                const submitBtn = document.querySelector('button[type="submit"]');
+                submitBtn.textContent = '登录中...';
+                submitBtn.disabled = true;
+
+                // 登录用户
+                const userCredential = await signInWithEmailAndPassword(auth, email, password);
+                const user = userCredential.user;
+
+                showMessage('登录成功！正在跳转...', 'success');
+
+                // 延迟跳转到仪表板
+                setTimeout(() => {
+                    window.location.href = 'dashboard.html';
+                }, 1500);
+
+            } catch (error) {
+                console.error('登录错误:', error);
+                let errorMessage = '登录失败，请检查邮箱和密码';
+
+                switch (error.code) {
+                    case 'auth/user-not-found':
+                        errorMessage = '用户不存在';
+                        break;
+                    case 'auth/wrong-password':
+                        errorMessage = '密码错误';
+                        break;
+                    case 'auth/invalid-email':
+                        errorMessage = '邮箱格式不正确';
+                        break;
+                    case 'auth/user-disabled':
+                        errorMessage = '账号已被禁用';
+                        break;
+                    case 'auth/too-many-requests':
+                        errorMessage = '登录尝试次数过多，请稍后再试';
+                        break;
+                    case 'auth/network-request-failed':
+                        errorMessage = '网络连接失败，请检查网络后重试';
+                        break;
+                }
+
+                showMessage(errorMessage, 'error');
+
+                // 恢复按钮状态
+                const submitBtn = document.querySelector('button[type="submit"]');
+                submitBtn.textContent = '登录';
+                submitBtn.disabled = false;
+            }
+        });
+
+        // 忘记密码处理
+        document.getElementById('forgotPassword').addEventListener('click', async (e) => {
+            e.preventDefault();
+
+            const email = document.getElementById('email').value;
+
+            if (!email) {
+                showMessage('请输入邮箱地址', 'error');
+                return;
+            }
+
+            try {
+                await sendPasswordResetEmail(auth, email);
+                showMessage('密码重置邮件已发送，请检查您的邮箱', 'success');
+            } catch (error) {
+                console.error('重置密码错误:', error);
+                let errorMessage = '发送重置邮件失败';
+
+                switch (error.code) {
+                    case 'auth/user-not-found':
+                        errorMessage = '此邮箱未注册';
+                        break;
+                    case 'auth/invalid-email':
+                        errorMessage = '邮箱格式不正确';
+                        break;
+                }
+
+                showMessage(errorMessage, 'error');
+            }
+        });
+
+        // 显示消息函数
+        function showMessage(message, type) {
+            const messageDiv = document.getElementById('message');
+            messageDiv.textContent = message;
+            messageDiv.className = `message ${type}`;
+            messageDiv.style.display = 'block';
+
+            // 5秒后自动隐藏
+            setTimeout(() => {
+                messageDiv.style.display = 'none';
+            }, 5000);
+        }
+
+        // 检查用户是否已登录
+        auth.onAuthStateChanged((user) => {
+            if (user) {
+                // 用户已登录，重定向到仪表板
+                window.location.href = 'dashboard.html';
+            }
+        });
+    </script>
+
+    <script src="static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户仪表板 - Peaceful Independence</title>
+    <meta name="description" content="您的个性化仪表板，访问支持资源和服务。">
+    <link rel="stylesheet" href="static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="static/logo-icon.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="static/logo-icon.svg" alt="Peaceful Independence Logo" class="logo-icon-svg">
+                <span>Peaceful Independence</span>
+            </div>
+            <div class="nav-right">
+                <div class="language-links">
+                    <a href="dashboard.html" class="lang-link">EN</a>
+                    <span class="lang-separator">|</span>
+                    <a href="dashboard-es.html" class="lang-link">ES</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index-zh.html">首页</a></li>
+                    <li><a href="#" id="logoutBtn">退出登录</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Header -->
+    <section class="dashboard-header">
+        <div class="container">
+            <div class="dashboard-welcome">
+                <h1>欢迎回来，<span id="userName">用户</span>！</h1>
+                <p>您的个性化支持中心</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Content -->
+    <section class="dashboard-content">
+        <div class="container">
+            <div class="dashboard-grid">
+                <!-- Profile Card -->
+                <div class="dashboard-card profile-card">
+                    <div class="card-header">
+                        <h3>📋 个人资料</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="profile-info">
+                            <p><strong>邮箱：</strong><span id="userEmail"></span></p>
+                            <p><strong>注册时间：</strong><span id="userJoinDate"></span></p>
+                            <p><strong>账号状态：</strong><span class="status-active">活跃</span></p>
+                        </div>
+                        <button class="btn btn-secondary" onclick="editProfile()">编辑资料</button>
+                    </div>
+                </div>
+
+                <!-- Support Resources -->
+                <div class="dashboard-card resources-card">
+                    <div class="card-header">
+                        <h3>🛠️ 支持资源</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="resource-list">
+                            <div class="resource-item">
+                                <h4>家庭支持指南</h4>
+                                <p>获取照顾自闭症儿童的实用建议</p>
+                                <a href="#" class="resource-link">查看指南 →</a>
+                            </div>
+                            <div class="resource-item">
+                                <h4>社区活动</h4>
+                                <p>参与本地支持活动和聚会</p>
+                                <a href="#" class="resource-link">浏览活动 →</a>
+                            </div>
+                            <div class="resource-item">
+                                <h4>专业咨询</h4>
+                                <p>预约与专家的在线咨询</p>
+                                <a href="#" class="resource-link">预约咨询 →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progress Tracking -->
+                <div class="dashboard-card progress-card">
+                    <div class="card-header">
+                        <h3>📊 进度追踪</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="progress-item">
+                            <div class="progress-label">
+                                <span>完成的支持课程</span>
+                                <span>0/5</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="progress-item">
+                            <div class="progress-label">
+                                <span>参与的社区活动</span>
+                                <span>0/3</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">更新进度</button>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="dashboard-card actions-card">
+                    <div class="card-header">
+                        <h3>⚡ 快捷操作</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="quick-actions">
+                            <button class="action-btn" onclick="contactSupport()">
+                                <span class="action-icon">💬</span>
+                                <span>联系支持</span>
+                            </button>
+                            <button class="action-btn" onclick="scheduleAppointment()">
+                                <span class="action-icon">📅</span>
+                                <span>预约咨询</span>
+                            </button>
+                            <button class="action-btn" onclick="viewResources()">
+                                <span class="action-icon">📚</span>
+                                <span>查看资源</span>
+                            </button>
+                            <button class="action-btn" onclick="joinCommunity()">
+                                <span class="action-icon">👥</span>
+                                <span>加入社区</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="dashboard-card activity-card">
+                    <div class="card-header">
+                        <h3>🕒 最近活动</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <div class="activity-icon">🔐</div>
+                                <div class="activity-content">
+                                    <p>账号登录</p>
+                                    <small id="lastLoginTime">刚刚</small>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">📧</div>
+                                <div class="activity-content">
+                                    <p>欢迎邮件已发送</p>
+                                    <small>注册时</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Settings -->
+                <div class="dashboard-card settings-card">
+                    <div class="card-header">
+                        <h3>⚙️ 账号设置</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="settings-options">
+                            <button class="setting-btn" onclick="changePassword()">
+                                <span>修改密码</span>
+                                <span>→</span>
+                            </button>
+                            <button class="setting-btn" onclick="manageNotifications()">
+                                <span>通知设置</span>
+                                <span>→</span>
+                            </button>
+                            <button class="setting-btn" onclick="privacySettings()">
+                                <span>隐私设置</span>
+                                <span>→</span>
+                            </button>
+                            <button class="setting-btn danger" onclick="deleteAccount()">
+                                <span>删除账号</span>
+                                <span>→</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <img src="static/logo-icon.svg" alt="Peaceful Independence Logo" class="logo-icon-svg">
+                        <span>Peaceful Independence</span>
+                    </div>
+                    <p>Relieving Burdens, Enabling Independence</p>
+                </div>
+                <div class="footer-section">
+                    <h4>支持链接</h4>
+                    <ul>
+                        <li><a href="help.html">帮助中心</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                        <li><a href="privacy.html">隐私政策</a></li>
+                        <li><a href="terms.html">使用条款</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系信息</h4>
+                    <p>📧 info@independentspectrum.org</p>
+                    <p>📱 +1 (555) 123-4567</p>
+                    <p>📍 在线支持服务</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Peaceful Independence. All rights reserved. | Website powered by AI</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js';
+        import { getAuth, signOut, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js';
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyDz3DtqF6RuJoKiRfcznepfO5zyXwcKMLc",
+            authDomain: "peaceful-independence.firebaseapp.com",
+            projectId: "peaceful-independence",
+            storageBucket: "peaceful-independence.firebasestorage.app",
+            messagingSenderId: "989115528458",
+            appId: "1:989115528458:web:36615bf180d2110d1576f3",
+            measurementId: "G-30HKN7XFT5"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            onAuthStateChanged(auth, (user) => {
+                if (user) {
+                    displayUserInfo(user);
+                } else {
+                    window.location.href = 'login-zh.html';
+                }
+            });
+        });
+
+        function displayUserInfo(user) {
+            const userNameElement = document.getElementById('userName');
+            const userEmailElement = document.getElementById('userEmail');
+            const userJoinDateElement = document.getElementById('userJoinDate');
+
+            userNameElement.textContent = user.displayName || user.email.split('@')[0];
+            userEmailElement.textContent = user.email;
+
+            if (user.metadata.creationTime) {
+                const joinDate = new Date(user.metadata.creationTime);
+                userJoinDateElement.textContent = joinDate.toLocaleDateString('zh-CN');
+            }
+
+            if (user.metadata.lastSignInTime) {
+                const lastLogin = new Date(user.metadata.lastSignInTime);
+                document.getElementById('lastLoginTime').textContent = lastLogin.toLocaleString('zh-CN');
+            }
+        }
+
+        document.getElementById('logoutBtn').addEventListener('click', async (e) => {
+            e.preventDefault();
+
+            try {
+                await signOut(auth);
+                window.location.href = 'index-zh.html';
+            } catch (error) {
+                console.error('退出登录错误:', error);
+                alert('退出登录失败，请重试');
+            }
+        });
+
+        window.contactSupport = function() {
+            window.location.href = 'contact.html';
+        };
+
+        window.scheduleAppointment = function() {
+            alert('预约功能即将上线！');
+        };
+
+        window.viewResources = function() {
+            window.location.href = 'services.html';
+        };
+
+        window.joinCommunity = function() {
+            alert('社区功能即将上线！');
+        };
+
+        window.editProfile = function() {
+            alert('编辑资料功能即将上线！');
+        };
+
+        window.changePassword = function() {
+            alert('修改密码功能即将上线！');
+        };
+
+        window.manageNotifications = function() {
+            alert('通知设置功能即将上线！');
+        };
+
+        window.privacySettings = function() {
+            alert('隐私设置功能即将上线！');
+        };
+
+        window.deleteAccount = function() {
+            if (confirm('确定要删除账号吗？此操作不可撤销。')) {
+                alert('删除账号功能即将上线！');
+            }
+        };
+    </script>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
