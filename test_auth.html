@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>认证系统测试 - Peaceful Independence</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-result { margin: 10px 0; padding: 10px; border-radius: 5px; }
+        .success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .warning { background: #fff3cd; color: #856404; border: 1px solid #ffeaa7; }
+        button { padding: 10px 20px; margin: 5px; cursor: pointer; }
+        input { padding: 8px; margin: 5px; width: 200px; }
+    </style>
+</head>
+<body>
+    <h1>🔍 认证系统诊断工具</h1>
+    <p>这个页面帮助您诊断注册/登录功能的问题。</p>
+
+    <div id="results"></div>
+
+    <h2>Firebase配置检查</h2>
+    <div id="firebase-status" class="test-result warning">
+        🔄 检查中...
+    </div>
+
+    <h2>网络连接测试</h2>
+    <div id="network-status" class="test-result warning">
+        🔄 检查中...
+    </div>
+
+    <h2>手动测试</h2>
+    <div>
+        <input type="email" id="test-email" placeholder="测试邮箱">
+        <input type="password" id="test-password" placeholder="测试密码">
+        <button onclick="testRegister()">测试注册</button>
+        <button onclick="testLogin()">测试登录</button>
+    </div>
+
+    <div id="manual-result" class="test-result" style="display: none;"></div>
+
+    <h2>解决方案</h2>
+    <div class="test-result warning">
+        <strong>问题诊断：</strong><br>
+        1. 如果看到 "Firebase配置未设置" - 需要设置Firebase项目<br>
+        2. 如果看到 "网络连接失败" - 检查网络连接<br>
+        3. 如果看到其他错误 - 检查浏览器控制台的详细信息
+    </div>
+
+    <script type="module">
+        const resultsDiv = document.getElementById('results');
+        const firebaseStatus = document.getElementById('firebase-status');
+        const networkStatus = document.getElementById('network-status');
+
+        function addResult(message, type = 'info') {
+            const div = document.createElement('div');
+            div.className = `test-result ${type}`;
+            div.textContent = message;
+            resultsDiv.appendChild(div);
+        }
+
+        // 检查Firebase配置
+        async function checkFirebaseConfig() {
+            try {
+                // 尝试导入Firebase - 这会告诉我们配置是否正确
+                const { initializeApp } = await import('https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js');
+
+                // 检查配置常量
+                const config = {
+                    apiKey: "AIzaSyDz3DtqF6RuJoKiRfcznepfO5zyXwcKMLc",
+                    authDomain: "peaceful-independence.firebaseapp.com",
+                    projectId: "peaceful-independence",
+                    storageBucket: "peaceful-independence.firebasestorage.app",
+                    messagingSenderId: "989115528458",
+                    appId: "1:989115528458:web:36615bf180d2110d1576f3",
+                    measurementId: "G-30HKN7XFT5"
+                };
+
+                // 检查是否有占位符
+                const hasPlaceholder = Object.values(config).some(value =>
+                    typeof value === 'string' && value.includes('your-'));
+
+                if (hasPlaceholder) {
+                    firebaseStatus.className = 'test-result error';
+                    firebaseStatus.innerHTML = '❌ Firebase配置未设置<br>' +
+                        '请按照 <code>AUTH_SETUP_README.md</code> 中的说明设置Firebase项目，并更新所有页面中的配置。';
+                    return false;
+                }
+
+                // 尝试初始化Firebase
+                const app = initializeApp(config);
+                firebaseStatus.className = 'test-result success';
+                firebaseStatus.textContent = '✅ Firebase配置正确';
+                return true;
+
+            } catch (error) {
+                firebaseStatus.className = 'test-result error';
+                firebaseStatus.innerHTML = `❌ Firebase初始化失败: ${error.message}`;
+                return false;
+            }
+        }
+
+        // 检查网络连接
+        async function checkNetwork() {
+            try {
+                const response = await fetch('https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js', {
+                    method: 'HEAD',
+                    mode: 'no-cors'
+                });
+                networkStatus.className = 'test-result success';
+                networkStatus.textContent = '✅ 网络连接正常';
+                return true;
+            } catch (error) {
+                networkStatus.className = 'test-result error';
+                networkStatus.textContent = '❌ 网络连接失败 - 检查网络连接';
+                return false;
+            }
+        }
+
+        // 测试注册功能
+        window.testRegister = async function() {
+            const email = document.getElementById('test-email').value;
+            const password = document.getElementById('test-password').value;
+
+            if (!email || !password) {
+                showManualResult('请输入邮箱和密码', 'error');
+                return;
+            }
+
+            try {
+                const { initializeApp } = await import('https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js');
+                const { getAuth, createUserWithEmailAndPassword } = await import('https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js');
+
+                const config = {
+                    apiKey: "AIzaSyDz3DtqF6RuJoKiRfcznepfO5zyXwcKMLc",
+                    authDomain: "peaceful-independence.firebaseapp.com",
+                    projectId: "peaceful-independence",
+                    storageBucket: "peaceful-independence.firebasestorage.app",
+                    messagingSenderId: "989115528458",
+                    appId: "1:989115528458:web:36615bf180d2110d1576f3",
+                    measurementId: "G-30HKN7XFT5"
+                };
+
+                const app = initializeApp(config);
+                const auth = getAuth(app);
+
+                const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+                showManualResult('注册成功！', 'success');
+
+            } catch (error) {
+                showManualResult(`注册失败: ${error.message}`, 'error');
+            }
+        };
+
+        // 测试登录功能
+        window.testLogin = async function() {
+            const email = document.getElementById('test-email').value;
+            const password = document.getElementById('test-password').value;
+
+            if (!email || !password) {
+                showManualResult('请输入邮箱和密码', 'error');
+                return;
+            }
+
+            try {
+                const { initializeApp } = await import('https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js');
+                const { getAuth, signInWithEmailAndPassword } = await import('https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js');
+
+                const config = {
+                    apiKey: "AIzaSyDz3DtqF6RuJoKiRfcznepfO5zyXwcKMLc",
+                    authDomain: "peaceful-independence.firebaseapp.com",
+                    projectId: "peaceful-independence",
+                    storageBucket: "peaceful-independence.firebasestorage.app",
+                    messagingSenderId: "989115528458",
+                    appId: "1:989115528458:web:36615bf180d2110d1576f3",
+                    measurementId: "G-30HKN7XFT5"
+                };
+
+                const app = initializeApp(config);
+                const auth = getAuth(app);
+
+                const userCredential = await signInWithEmailAndPassword(auth, email, password);
+                showManualResult('登录成功！', 'success');
+
+            } catch (error) {
+                showManualResult(`登录失败: ${error.message}`, 'error');
+            }
+        };
+
+        function showManualResult(message, type) {
+            const resultDiv = document.getElementById('manual-result');
+            resultDiv.className = `test-result ${type}`;
+            resultDiv.textContent = message;
+            resultDiv.style.display = 'block';
+        }
+
+        // 页面加载时运行检查
+        window.addEventListener('load', async () => {
+            addResult('🔍 开始诊断认证系统...', 'info');
+            await checkNetwork();
+            await checkFirebaseConfig();
+            addResult('✅ 诊断完成', 'success');
+        });
+    </script>
+</body>
+</html>
