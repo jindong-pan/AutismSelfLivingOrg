@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLT 盐光之币 | 公益水龙头</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background: radial-gradient(circle at center, #1e293b, #0f172a); color: #f8fafc; font-family: system-ui, -apple-system, sans-serif; }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <div class="max-w-md w-full glass rounded-3xl p-8 shadow-2xl text-center">
+        <div class="relative inline-block mb-6">
+            <img src="https://raw.githubusercontent.com/jindong-pan/AutismSelfLivingOrg/main/docs/SLT.png" 
+                 alt="SLT" class="w-24 h-24 rounded-full shadow-lg border-2 border-amber-400/50">
+            <div class="absolute inset-0 rounded-full animate-pulse bg-amber-400/20"></div>
+        </div>
+        
+        <h1 class="text-3xl font-extrabold text-amber-400 mb-2">盐光之币 (SLT)</h1>
+        <p class="text-slate-400 text-sm mb-8 leading-relaxed">
+            “作世上的盐，作世上的光”<br>
+            点击下方领取 SLT，支持自闭症自主生活项目。
+        </p>
+
+        <div class="space-y-5">
+            <input type="text" id="addressInput" placeholder="输入你的 inj1... 地址" 
+                   class="w-full bg-slate-900/50 border border-slate-700 rounded-2xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-amber-500/50 transition-all text-center tracking-wide">
+
+            <button onclick="handleClaim()" id="mainBtn"
+                    class="w-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white font-bold py-4 rounded-2xl shadow-lg shadow-amber-900/20 transition-all transform active:scale-95">
+                立即领取 100 SLT
+            </button>
+
+            <div id="statusBox" class="hidden text-sm p-4 rounded-2xl transition-all"></div>
+        </div>
+
+        <p class="mt-8 text-xs text-slate-500">Injective Testnet Faucet • 每 24 小时限领一次</p>
+    </div>
+
+    <script>
+        // --- ⚙️ 重要配置：指向你的服务器 IP ---
+        // 本地测试用: http://localhost:8000/claim
+        // 部署上线用: http://你的服务器公网IP:8000/claim
+        const API_URL = 'http://34.51.66.16:8000/claim'; 
+
+        async function handleClaim() {
+            const address = document.getElementById('addressInput').value.trim();
+            const btn = document.getElementById('mainBtn');
+            const status = document.getElementById('statusBox');
+
+            if (!address.startsWith('inj1')) {
+                updateStatus('请输入有效的 inj1 开头的地址', 'error');
+                return;
+            }
+
+            // 按钮状态更新
+            btn.disabled = true;
+            btn.classList.add('opacity-50', 'cursor-not-allowed');
+            updateStatus('🚀 正在请求区块链分发...', 'info');
+
+            try {
+                const response = await fetch(API_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ address: address })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    updateStatus(`🎉 成功！代币已发送。<br><a href="https://testnet.explorer.injective.network/transaction/${data.tx_hash}" target="_blank" class="underline">查看交易详情</a>`, 'success');
+                } else {
+                    updateStatus(`⚠️ 领取失败: ${data.detail || '未知错误'}`, 'error');
+                    resetBtn();
+                }
+            } catch (err) {
+                updateStatus('❌ 无法连接到后端服务器，请检查后端是否启动。', 'error');
+                resetBtn();
+            }
+        }
+
+        function updateStatus(text, type) {
+            const status = document.getElementById('statusBox');
+            status.classList.remove('hidden', 'bg-red-900/30', 'bg-blue-900/30', 'bg-green-900/30', 'text-red-200', 'text-blue-200', 'text-green-200');
+            
+            if (type === 'error') status.classList.add('bg-red-900/30', 'text-red-200');
+            else if (type === 'info') status.classList.add('bg-blue-900/30', 'text-blue-200');
+            else if (type === 'success') status.classList.add('bg-green-900/30', 'text-green-200');
+            
+            status.innerHTML = text;
+        }
+
+        function resetBtn() {
+            const btn = document.getElementById('mainBtn');
+            btn.disabled = false;
+            btn.classList.remove('opacity-50', 'cursor-not-allowed');
+        }
+    </script>
+</body>
+</html>
